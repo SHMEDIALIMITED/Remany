@@ -1,0 +1,25 @@
+/* 
+  Localizable.strings
+  Voci
+
+  Created by Hello World on 25/06/2013.
+  Copyright (c) 2013 SH MEDIA Limited. All rights reserved.
+*/
+"RemAny" = "Remany";                        //  App name
+"Back" = "Retour";                            //  Back button lable for navigation bar
+"Add New Exercice" = "Nouveau Exercice";    //  Add new exercice screen title
+"Exercice Name" = "Nom d'Exercice";          //  Exercice name text input filed label
+"%d of %d Cards" = "%d de %d Cards";        //  Detail text in register view table cell showing number of cards and ideal maximum amount cards
+"%d Cards" = "%d Cards";                    //  Detail text in last register view table cell that holds all completed cards
+"1st Register" = "1er Registre";            //  Table view cell label for first register
+"2nd Register" = "2eme Registre";            //  Table view cell label for second register
+"3rd Register" = "3eme Registre";            //  Table view cell label for third register
+"4th Register" = "4eme Registre";            //  Table view cell label for fourth register
+"5th Register" = "5eme Registre";            //  Table view cell label for fifth register
+"Completed" = "Complet";                  //  Table view cell label for sixth(completed cards) register
+"Add New Card" = "Nouveau Card";            //  Add new card screen title
+"Cancel" = "Annuler";                        //  Cancel action button
+"Delete Card" = "Supprimer Card";              //  Delete card confirmation button (in actionsheet)
+"Session Result" = "Resultat";        //  Session result alert popup title
+"%i correct answers\n %i wrong answers" = "%i correct reponse\n %i mauvaise reponse";  // Session result alert popup message
+"OK" = "OK";// Session result alert popup OK button

@@ -7,13 +7,96 @@
 //
 
 #import "AppDelegate.h"
+#import "MasterViewController.h"
+#import "Exercice.h"
 
-@implementation AppDelegate
+@implementation AppDelegate {
+    NSMutableArray *exercices;
+    NSString* plistPath;
+}
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
-    // Override point for customization after application launch.
+    
+    
+    plistPath = [NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES) lastObject];
+    plistPath = [plistPath stringByAppendingPathComponent:@"data.plist"];
+    
+    NSFileManager *fileManager = [NSFileManager defaultManager];
+    
+    if (![fileManager fileExistsAtPath:plistPath]) {
+        NSLog(@"CREATING plist in DOCUMENTS");
+        NSString *sourcePath = [[NSBundle mainBundle] pathForResource:@"data" ofType:@"plist"];
+        [fileManager copyItemAtPath:sourcePath toPath:plistPath error:nil];
+    }else {
+        NSLog(@"ALREADY in DOCUMENTS");
+    }
+    
+    
+    NSDictionary* data = [[NSDictionary alloc] initWithContentsOfFile:plistPath];
+
+    // Create Deep Model from plist
+    exercices = [[NSMutableArray alloc] init];
+    for(id object in [data objectForKey:@"exercices"] ) {
+        Exercice *e = [[Exercice alloc] init];
+        e.name = [object valueForKey:@"name"];
+        e.data = [[NSMutableArray alloc] initWithCapacity:5];
+        for(id object2 in [object valueForKey:@"data"]) {
+            NSMutableArray *cards = [[NSMutableArray alloc] initWithCapacity:0];
+            [e.data addObject:cards];
+            for(NSArray *object3 in object2) {
+                Card *c = [[Card alloc] init];
+                c.front = [object3 valueForKey:@"front"];
+                c.back = [object3 valueForKey:@"back"];
+                [cards addObject:c];
+            }
+        }
+        [exercices addObject:e];
+    }
+    
+    
+    // set model on masterview
+	UINavigationController *navigationController = (UINavigationController *)self.window.rootViewController;
+	MasterViewController *masterViewController = [[navigationController viewControllers] objectAtIndex:0];
+	masterViewController.exercices = exercices;
+    
+    // App appearance
+    [[UINavigationBar appearance] setTintColor:[UIColor blackColor]];
+    [[UIToolbar appearance] setTintColor:[UIColor blackColor]];
+    
     return YES;
+}
+
+-(void)saveData {
+    
+    // Serialize deep model to plist
+    NSMutableArray *exportExercices = [[NSMutableArray alloc] init];
+    for(Exercice *e in exercices) {
+        NSMutableDictionary *exerciceDictionary = [[NSMutableDictionary alloc]initWithCapacity:2];
+        [exerciceDictionary setObject:e.name forKey:@"name"];
+        NSMutableArray *cardData = [[NSMutableArray alloc] initWithCapacity:e.data.count];
+        
+        for(NSMutableArray *r in e.data) {
+             NSMutableArray *regsiterData = [[NSMutableArray alloc] initWithCapacity:r.count];
+            for(Card * c in r) {
+                NSMutableDictionary *cardDictionary = [[NSMutableDictionary alloc]initWithCapacity:2];
+                [cardDictionary setObject:c.front forKey:@"front"];
+                [cardDictionary setObject:c.back forKey:@"back"];
+                [regsiterData addObject:cardDictionary];
+            }
+            [cardData addObject:regsiterData];
+        }
+        
+       
+        [exerciceDictionary setObject:cardData forKey:@"data"];
+        [exportExercices addObject:exerciceDictionary];
+        
+    }
+    
+    NSMutableDictionary *saver = [[NSMutableDictionary alloc] initWithCapacity:1];
+    [saver setObject:exportExercices forKey:@"exercices"];
+    
+    [saver writeToFile:plistPath atomically:NO];
 }
 							
 - (void)applicationWillResignActive:(UIApplication *)application
@@ -24,8 +107,7 @@
 
 - (void)applicationDidEnterBackground:(UIApplication *)application
 {
-    // Use this method to release shared resources, save user data, invalidate timers, and store enough application state information to restore your application to its current state in case it is terminated later. 
-    // If your application supports background execution, this method is called instead of applicationWillTerminate: when the user quits.
+    [self saveData];
 }
 
 - (void)applicationWillEnterForeground:(UIApplication *)application
@@ -40,7 +122,8 @@
 
 - (void)applicationWillTerminate:(UIApplication *)application
 {
-    // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
+    // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:
+    [self saveData];
 }
 
 @end

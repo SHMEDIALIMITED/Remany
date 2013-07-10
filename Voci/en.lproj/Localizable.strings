@@ -1,0 +1,41 @@
+/* 
+  Localizable.strings
+  Voci
+
+  Created by Hello World on 25/06/2013.
+  Copyright (c) 2013 SH MEDIA Limited. All rights reserved.
+*/
+"RemAny" = "Remany";                        //  App name
+"Back" = "Back";                            //  Back button lable for navigation bar
+"Add New Exercise" = "Add New Exercise";    //  Add new exercice screen title
+"Exercise Name" = "Exercise Name";          //  Exercice name text input filed label
+"%d of %d Cards" = "%d of %d Cards";        //  Detail text in register view table cell showing number of cards and ideal maximum amount cards
+"%d Cards" = "%d Cards";                    //  Detail text in last register view table cell that holds all completed cards
+"1st Register" = "1st Register";            //  Table view cell label for first register
+"2nd Register" = "2nd Register";            //  Table view cell label for second register
+"3rd Register" = "3rd Register";            //  Table view cell label for third register
+"4th Register" = "4th Register";            //  Table view cell label for fourth register
+"5th Register" = "5th Register";            //  Table view cell label for fifth register
+"Completed" = "Completed";                  //  Table view cell label for sixth(completed cards) register
+"Add New Card" = "Add New Card";            //  Add new card screen title
+"Cancel" = "Cancel";                        //  Cancel action button
+"Delete Card" = "Delete Card";              //  Delete card confirmation button (in actionsheet)
+"Right Button" = "Right Answer";
+"Wrong Button" = "Wrong Answer";
+"Session Result" = "Session Result";        //  Session result alert popup title
+"%i correct answers\n %i wrong answers" = "%i correct answers\n %i wrong answers";  // Session result alert popup message
+"OK" = "OK";// Session result alert popup OK button
+
+"How it works" = "How it works";
+"<style>*{ font-family:Helvetica; }</style><p>Remany utilises register cards where a question is written on one side and the answer on the other side. Each exercise consists of 6 card registers. The registers help to repeat cards in different intervals so that a memroised card will not be repeated unnecessarily and the card will be memorised for ever.</br></br><img src='Illustartion_REM_en.png'></img></p><ul><li><b>1st Register:</b>If a card is memorised correctly it will move to the 2nd register. These cards should be <bold>repeated every day.</bold>.</li><li><b>2nd Register:</b>If a card is memorised correctly it will move to the 3rd register. If not the card will go back to the 1st register. These cards should be <bold>repeated every second day.</bold></li><li><b>3rd Register:</b>If a card is memorised correctly it will move to the 4th register. If not the card will go back to the 1st register. These cards should be <bold>repeated every third day.</bold></li><li><b>4th Register:</b>If a card is memorised correctly it will move to the 4th register. If not the card will go back to the 1st register. These cards should be <bold>repeated every week.</bold></li><li><b>5th Register:</b>If a card is memorised correctly it will be moved to the 'Completed' register. If not the card will go back to the 1st register. These cards should be <bold>repeated every month.</bold></li><ul>" = "<style>*{ font-family:Helvetica; }</style><p>Remany utilises register cards where a question is written on one side and the answer on the other side. Each exercise consists of 6 card registers. The registers help to repeat cards in different intervals so that a memroised card will not be repeated unnecessarily and the card will be memorised for ever.</br></br><img src='Illustartion_REM_en.png'></img></p><ul><li><b>1st Register:</b>If a card is memorised correctly it will move to the 2nd register. These cards should be <bold>repeated every day.</bold>.</li><li><b>2nd Register:</b>If a card is memorised correctly it will move to the 3rd register. If not the card will go back to the 1st register. These cards should be <bold>repeated every second day.</bold></li><li><b>3rd Register:</b>If a card is memorised correctly it will move to the 4th register. If not the card will go back to the 1st register. These cards should be <bold>repeated every third day.</bold></li><li><b>4th Register:</b>If a card is memorised correctly it will move to the 4th register. If not the card will go back to the 1st register. These cards should be <bold>repeated every week.</bold></li><li><b>5th Register:</b>If a card is memorised correctly it will be moved to the 'Completed' register. If not the card will go back to the 1st register. These cards should be <bold>repeated every month.</bold></li><ul>";
+
+"Swipe from left to right to reveal back of the card." = "Swipe from left to right to reveal back of the card.";
+
+"Tap left button if you know the correct answer or the right button if your answer was incorrect." = "Tap left button if you know the correct answer or the right button if your answer was incorrect.";
+
+"Tap to delete current card." = "Tap to delete current card";
+
+"Tap to enter text." = "Tap to enter text.";
+
+"Tap to continue" = "Tap to continue";
+

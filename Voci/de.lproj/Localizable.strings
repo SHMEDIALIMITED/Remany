@@ -1,0 +1,40 @@
+/*
+ Localizable.strings
+ Voci
+ 
+ Created by Hello World on 25/06/2013.
+ Copyright (c) 2013 SH MEDIA Limited. All rights reserved.
+ */
+"RemAny" = "Remany";                        //  App name
+"Back" = "Zurück";                            //  Back button lable for navigation bar
+"Add New Exercise" = "Neue Übung";    //  Add new exercice screen title
+"Exercise Name" = "Übungsname";          //  Exercice name text input filed label
+"%d of %d Cards" = "%d von %d Karten";        //  Detail text in register view table cell showing number of cards and ideal maximum amount cards
+"%d Cards" = "%d Karten";                    //  Detail text in last register view table cell that holds all completed cards
+"1st Register" = "1. Kartei";            //  Table view cell label for first register
+"2nd Register" = "2. Kartei";            //  Table view cell label for second register
+"3rd Register" = "3. Kartei";            //  Table view cell label for third register
+"4th Register" = "4. Kartei";            //  Table view cell label for fourth register
+"5th Register" = "5. Kartei";            //  Table view cell label for fifth register
+"Completed" = "Gewusste Karten";                  //  Table view cell label for sixth(completed cards) register
+"Add New Card" = "Neue Karte";            //  Add new card screen title
+"Cancel" = "Abbrechen";                        //  Cancel action button
+"Delete Card" = "Karte löschen";              //  Delete card confirmation button (in actionsheet)
+"Right Button" = "Richtig";
+"Wrong Button" = "Falsch";
+"Session Result" = "Resultat";        //  Session result alert popup title
+"%i correct answers\n %i wrong answers" = "%i Korrekte Antworten\n %i Inkorrekte Antworten";  // Session result alert popup message
+"OK" = "OK";// Session result alert popup OK button
+
+"How it works" = "How it works";
+"<style>*{ font-family:Helvetica; }</style><p>Remany utilises register cards where a question is written on one side and the answer on the other side. Each exercise consists of 6 card registers. The registers help to repeat cards in different intervals so that a memroised card will not be repeated unnecessarily and the card will be memorised for ever.</br></br><img src='Illustartion_REM_en.png'></img></p><ul><li><b>1st Register:</b>If a card is memorised correctly it will move to the 2nd register. These cards should be <bold>repeated every day.</bold>.</li><li><b>2nd Register:</b>If a card is memorised correctly it will move to the 3rd register. If not the card will go back to the 1st register. These cards should be <bold>repeated every second day.</bold></li><li><b>3rd Register:</b>If a card is memorised correctly it will move to the 4th register. If not the card will go back to the 1st register. These cards should be <bold>repeated every third day.</bold></li><li><b>4th Register:</b>If a card is memorised correctly it will move to the 4th register. If not the card will go back to the 1st register. These cards should be <bold>repeated every week.</bold></li><li><b>5th Register:</b>If a card is memorised correctly it will be moved to the 'Completed' register. If not the card will go back to the 1st register. These cards should be <bold>repeated every month.</bold></li><ul>" = "<style>*{ font-family:Helvetica; }</style><p>Remany hilf beim Lernen mittels Karteikarten. Auf der Vorderseite der Karte wird die Frage geschrieben und auf der Rückseite die Antwort. Jede Übung beinhaltet 6 Karteien. Diese Karteien helfen schon gewusste Karten nicht mehr zu repetieren und um sich die Begriffe für immer zu merken.</br></br><img src='Illustartion_REM_en.png'></img></p><ul><li><b>1. Kartei:</b> Neue Karten werden zu dieser Kartei hinzugefügt. Wenn eine Karte gewusst wurde, wird sie in der zweiten Kartei abgelegt. Diese Karten solten <b>täglich repetiert</b> werden.</li><li><b>2. Kartei:</b> Wenn eine Karte gewusst wurde, wird sie in der dritten Kartei abgelegt. Wenn nicht gehts sie zurück in die erste Kartei. Diese Karten sollten <b>jeden zweiten Tag repetiert</b> werden.</li><li><b>3. Kartei:</b> Wenn eine Karte gewusst wurde, wird sie in der vierten Kartei abgelegt. Wenn nicht gehts sie zurück in die erste Kartei. Diese Karten sollten <b>jeden dritten Tag repetiert</b> werden.</li><li><b>4. Kartei:</b> Wenn eine Karte gewusst wurde, wird sie in der fünften Kartei abgelegt. Wenn nicht gehts sie zurück in die erste Kartei. Diese Karten sollten <b>wöchentlich repetiert</b> werden.</li><li><b>5. Kartei:</b> Wenn eine Karte gewusst wurde, wird sie in der letzten Kartei abgelegt. Wenn nicht gehts sie zurück in die erste Kartei. Diese Karten sollten <b>monatlich repetiert</b> werden.</li><ul>";
+
+"Swipe from left to right to reveal back of the card." = "Swipen Sie von links nach rechts um die Rückseite der Karte anzuzeigen.";
+
+"Tap left button if you know the correct answer or the right button if your answer was incorrect." = "Tappen Sie den linken Button wenn Sie die Antwort wissen oder den rechten Button wenn Sie die Antwort nicht wissen.";
+
+"Tap to delete current card." = "Tappen sie hier wenn Sie die Karte löschen wollen.";
+
+"Tap to enter text." = "Tappen Sie die Karte um den Text einzugeben.";
+
+"Tap to continue" = "Tappen Sie um zum nächsten Schritt zu gehen.";

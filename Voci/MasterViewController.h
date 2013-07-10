@@ -7,7 +7,11 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "NewExerciceViewController.h"
+#import "HelpViewController.h"
 
-@interface MasterViewController : UITableViewController
+@interface MasterViewController : UITableViewController <NewExerciceViewControllerDelegate, HelpViewControllerDelegate>
+
+@property (nonatomic, strong) NSMutableArray *exercices;
 
 @end

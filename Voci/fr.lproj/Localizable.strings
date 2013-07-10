@@ -1,0 +1,42 @@
+/*
+ Localizable.strings
+ Voci
+ 
+ Created by Hello World on 25/06/2013.
+ Copyright (c) 2013 SH MEDIA Limited. All rights reserved.
+ */
+"RemAny" = "Remany";                        //  App name
+"Back" = "Retour";                            //  Back button lable for navigation bar
+"Add New Exercise" = "Nouveau Exercice";    //  Add new exercice screen title
+"Exercise Name" = "Nom de l'exercice";          //  Exercice name text input filed label
+"%d of %d Cards" = "%d cartes sur %d ";        //  Detail text in register view table cell showing number of cards and ideal maximum amount cards
+"%d Cards" = "%d cartes";                    //  Detail text in last register view table cell that holds all completed cards
+"1st Register" = "1er Index";            //  Table view cell label for first register
+"2nd Register" = "2ème Index";            //  Table view cell label for second register
+"3rd Register" = "3ème Index";            //  Table view cell label for third register
+"4th Register" = "4ème Index";            //  Table view cell label for fourth register
+"5th Register" = "5ème Index";            //  Table view cell label for fifth register
+"Completed" = "Cartes Mémorisées";                  //  Table view cell label for sixth(completed cards) register
+"Add New Card" = "Nouvelle Carte";            //  Add new card screen title
+"Cancel" = "Annuler";                        //  Cancel action button
+"Delete Card" = "Supprimer Carte";              //  Delete card confirmation button (in actionsheet)
+"Right Button" = "Correct";
+"Wrong Button" = "Incorrect";
+"Session Result" = "Résultat";        //  Session result alert popup title
+"%i correct answers\n %i wrong answers" = "%i reponse correcte\n %i mauvaise reponse";  // Session result alert popup message
+"OK" = "OK";// Session result alert popup OK button
+
+
+"How it works" = "Comment ça marche";
+
+"<style>*{ font-family:Helvetica; }</style><p>Remany utilises register cards where a question is written on one side and the answer on the other side. Each exercise consists of 6 card registers. The registers help to repeat cards in different intervals so that a memroised card will not be repeated unnecessarily and the card will be memorised for ever.</br></br><img src='Illustartion_REM_en.png'></img></p><ul><li><b>1st Register:</b>If a card is memorised correctly it will move to the 2nd register. These cards should be <bold>repeated every day.</bold>.</li><li><b>2nd Register:</b>If a card is memorised correctly it will move to the 3rd register. If not the card will go back to the 1st register. These cards should be <bold>repeated every second day.</bold></li><li><b>3rd Register:</b>If a card is memorised correctly it will move to the 4th register. If not the card will go back to the 1st register. These cards should be <bold>repeated every third day.</bold></li><li><b>4th Register:</b>If a card is memorised correctly it will move to the 4th register. If not the card will go back to the 1st register. These cards should be <bold>repeated every week.</bold></li><li><b>5th Register:</b>If a card is memorised correctly it will be moved to the 'Completed' register. If not the card will go back to the 1st register. These cards should be <bold>repeated every month.</bold></li><ul>" = "<style>*{ font-family:Helvetica; }</style><p>Utilisant un système de carte, Remany est une méthode de mémorisation basée sur la répétition.</p><p>Il vous suffit d'inscrire le mot ou l'idée à mémoriser sur le recto de la carte et la réponse correspondante sur le verso.</p><p>Chaque nouvelle carte est enregistrée dans l'index numéro 1. Si celle-ci a été mémorisée correctement, elle s'inscrira ensuite dans l'index numéro 2. Un exercice complet est composé de 5 index. Si votre carte n'a pas été mémorisée correctement elle retournera toujours dans l'index numéro 1.</p></br><img src='Illustartion_REM_en.png'></img><ul><li><b>1er Index:</b> Les cartes de l'index numéro 1 doivent être <b>répétées tous les jours.</b></li></br><li><b>2ème Index:</b> Les cartes de l'index numéro 2 doivent être <b>répétées tous les 2 jours.</b></li></br><li><b>èeme Index:</b> Les cartes de l'index numéro 3 doivent être <b>répétées tous les 3 jours.</b></li></br><li><b>4ème Index:</b> Les cartes de l'index numéro 4 doivent être <b>répétées chaque semaine.</b></li></br><li><b>5ème Index:</b> Les cartes de l'index numéro 5 doivent être <b>répétées tous les mois.</b></li><ul>";
+
+"Swipe from left to right to reveal back of the card." = "Swipez de gauche à droit pour découvrir le verso de la carte";
+
+"Tap left button if you know the correct answer or the right button if your answer was incorrect." = "Appuyez sur le bouton de gauche si vous connaissez la réponse ou appuyez sur le bouton de droit si vous ne la connaissez pas.";
+
+"Tap to delete current card." = "Appuyez pour supprimer la carte.";
+
+"Tap to enter text." = "Appuyez sur la carte pour saisir du texte.";
+
+"Tap to continue" = "Appuyez pour continuer.";

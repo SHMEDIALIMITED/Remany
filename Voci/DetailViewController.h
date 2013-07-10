@@ -7,10 +7,25 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "Exercice.h"
+#import "AddCardViewController.h"
 
-@interface DetailViewController : UIViewController
+@interface DetailViewController : UIViewController <AddCardViewControllerDelegate, UIActionSheetDelegate, UIAlertViewDelegate>
 
-@property (strong, nonatomic) id detailItem;
+@property (strong, nonatomic) Exercice *detailItem;
 
-@property (weak, nonatomic) IBOutlet UILabel *detailDescriptionLabel;
+@property (strong, nonatomic) IBOutlet UITextView *primaryView;
+@property (strong, nonatomic) IBOutlet UITextView *secondaryView;
+@property (strong, nonatomic) IBOutlet UIView *container;
+@property (strong, nonatomic) IBOutlet UIButton *rightButton;
+@property (strong, nonatomic) IBOutlet UIButton *wrongButton;
+
+
+- (IBAction)swipeRight:(UISwipeGestureRecognizer *)sender;
+- (IBAction)swipeLeft:(UISwipeGestureRecognizer *)sender;
+
+- (IBAction)deleteItem:(id)sender;
+- (IBAction)rightAnswer:(id)sender;
+- (IBAction)wrongAnswer:(id)sender;
+- (IBAction)showHelp:(id)sender;
 @end
